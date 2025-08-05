@@ -1,4 +1,4 @@
-<x-layouts.app :title="__('Books')">
+<x-layouts.app :title="__('Dashboard')">
     <div class="flex justify-between items-center mb-4">
         <h1 class="text-2xl font-bold">Books</h1>
         <a href="{{ route('books.create') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add Book</a>

@@ -8,7 +8,7 @@ class DashboardController extends Controller
 {
     public function __invoke()
     {
-        $books = Book::all(); // You can use paginate() if needed
+        $books = Book::all();
         return view('dashboard', compact('books'));
     }
 }
