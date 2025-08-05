@@ -190,3 +190,8 @@ class RemoteBookController extends Controller
 }
 ```
 
+## Testing the API
+
+to test the api if its working you can use postman
+
+![alt text](image.png)
