@@ -27,8 +27,10 @@ Route::post('/login', function (Request $request) {
     return response()->json(['token' => $token]);
 });
 
+//secured api using sanctum middleware
 Route::middleware('auth:sanctum')->group(function () {
     Route::apiResource('books', BookApiController::class);
 });
 
-//Route::apiResource('books', BookApiController::class);
+//unsecured api
+Route::apiResource('books', BookApiController::class);
